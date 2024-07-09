@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            *{
+                background-color: blue;
+
+            }
+      .circle{
+                
+                position: relative;
+                left: 800px;
+                top: 100px;
+                width: 1000px;
+                height: 1000px;
+                position: fixed;
+                overflow: hidden;
+                border-radius: 900px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 8px #676767;
+                backdrop-filter: blur();
+                animation-name: align;
+                animation-duration: 3s;      
+                    
+            }
+            @keyframes align {
+                    0%{top: 1000px;}
+                    25%{top: 750px;}
+                    50%{top: 500px;}
+                    100%{top: 100px;}
+                    
+                }
+        .write{
+            text-align: center;
+            margin: auto;
+            padding-top: 400px;
+            font-size: 40px;
+            border-right: 6px red;
+            z-index: 5;      
+            
+            
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="circle"></div>
+        <div class="write">
+                FERRO SLAB WORKS
+        </div>
+    </body>
+</html>
